@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Basic Page Needs
+         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>PointInverter: Point Cloud Reconstruction and Editing via a Generative Model with Shape Priors</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT
+         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <!-- CSS
+         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/skeleton.css">
+    <link rel="stylesheet" href="./css/footable.standalone.min.css">
+
+    <!-- Favicon
+         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Google icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- Analytics -->
+
+    <!-- Hover effect: https://codepen.io/nxworld/pen/ZYNOBZ -->
+    <style>
+      img {
+          display: block;
+      }
+
+      .column-50 {
+          float: left;
+          width: 50%;
+      }
+      .row-50:after {
+          content: "";
+          display: table;
+          clear: both;
+      }
+
+      .floating-teaser {
+          float: left;
+          width: 30%;
+          text-align: center;
+          padding: 15px;
+      }
+      .venue strong {
+          color: #99324b;
+      }
+
+      .benchmark {
+          width: 100%;
+          max-width: 960px;
+          overflow: scroll;
+          overflow-y: hidden;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <!-- Primary Page Layout
+         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="container">
+      <h4 style="text-align:center">PointInverter: Point Cloud Reconstruction and Editing via a Generative Model with Shape Priors</h4>
+      <p align="center", style="margin-bottom:12px;">
+        <a class="simple" href="mailto:jaeyeon.kim@connect.ust.hk">Jaeyeon Kim</a><sup>1</sup>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="simple" href="https://sonhua.github.io/">Binh-Son Hua</a><sup>3</sup>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="simple" href="https://ducthanhnguyen.weebly.com/">Duc Thanh Nguyen</a><sup>4</sup>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="simple" href="http://saikit.org/">Sai-Kit Yeung</a><sup>1</sup>
+      </p>
+
+      <p align="center" style="margin-bottom:20px;">
+        <sup>1</sup>Hong Kong University of Science and Technology
+        <span style="display:inline-block; width: 32px"></span>
+        <sup>2</sup>VinAI Research <br>
+        <span style="display:inline-block; width: 32px"></span>
+        <sup>3</sup>VinUniversity
+        <span style="display:inline-block; width: 32px"></span>
+        <sup>4</sup>Deakin University
+      </p>
+
+      <div class="venue">
+        <p align="center"> IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), 2023 </p>
+      </div>
+
+      <figure>
+        <img src="images/dense_correspondence_v2.png" style="width:100%"></img>
+        <br>
+        <p align="center">Dense correspondence</p>
+        <img src="images/ablation_v4.png" style="width:100%"></img>
+        <br>
+        <p align="center">Visual comparison</p>
+      </figure>
+
+      <br>
+
+      <div id="teaser" class="container" style="width:100%; margin:0; padding:0">
+        <h5>Abstract</h5>
+        <p align="justify">
+            In this paper, we propose a new method for mapping a 3D
+            point cloud to the latent space of a 3D generative adversarial
+            network. Our generative model for 3D point clouds is based
+            on SP-GAN, a state-of-the-art sphere-guided 3D point cloud
+            generator. We derive an efficient way to encode an input 3D
+            point cloud to the latent space of the SP-GAN. Our point
+            cloud encoder can resolve the point ordering issue during
+            inversion, and thus can determine the correspondences be-
+            tween points in the generated 3D point cloud and those in the
+            canonical sphere used by the generator. We show that our
+            method outperforms previous GAN inversion methods for 3D
+            point clouds, achieving state-of-the-art results both quanti-
+            tatively and qualitatively.
+          <br>
+        </p>
+      </div>
+
+    <div class="section">
+        <h5>Materials</h5>
+        <div class="container" style="width:95%">
+          <!-- Link row -->
+          <div class="row">
+            <!-- <div class="threse columns">
+              <a href="">Paper and Supplementary</a>
+            </div> -->
+            <!-- <div class="five columns">
+              <a href=>Poster</a>
+            </div> -->
+          </div>
+
+          <div class="row">
+            <div class="three columns">
+              <br>
+              <!-- <a href=>Code</a> -->
+	      <a href="">Code will be released soon</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+		<!-- -->
+	<div class="section">
+          <h5>Citation</h5> 
+  <pre style="margin:0"><code>@article{jy-pointinverter-wacv23,
+      title = {PointInverter: Point Cloud Reconstruction and Editing via a Generative Model with Shape Priors},
+      author = {Jaeyeon Kim and Binh-Son Hua and Duc Thanh Nguyen and Sai-Kit Yeung},
+      booktitle = {IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+      year = {2023}
+  }</code></pre>    			
+		</div>
+		
+        <!-- -->
+        <br> 
+        
+  <div class="section">
+      
+	<p>
+			This research project is partially supported by an internal grant from HKUST (R9429).
+      </p>
+  </div>
+  </div>
+
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/footable.min.js"></script>
+
+    <script type="text/javascript">
+      jQuery(function($){
+          $('.table').footable();
+      });
+    </script>
+
+    <!-- End Document
+         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  </body>
+</html>

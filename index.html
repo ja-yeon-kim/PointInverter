@@ -65,6 +65,13 @@
           overflow-y: hidden;
       }
 
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+
     </style>
   </head>
   <body>
@@ -97,9 +104,9 @@
         <p align="center"> IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), 2023 </p>
       </div>
 
-      <div class="venue" style="width:100%">
-          <img src="images/main.PNG" style="width:70%"></img>
-      </div>
+      <figure>
+        <img src="images/main.PNG"class="center">></img>
+      </figure>
       
       <br>
 
@@ -127,6 +134,7 @@
         <iframe width="420 " height="315" style="display: block"
           src="https://youtube.com/embed/5fsld4iwxIs">
         </iframe>
+        <br>
       </div>
 
       <div class="section">
@@ -160,11 +168,11 @@
           <h5 style="text-align:center">Results</h5>
           <figure>
             <img src="images/reconstruction.PNG" style="width:100%"></img>
-            <p >Inversion Reconstruction. The inverted point clouds by pointinverter are very similar to the target input data. </p>
+            <p align="center">Inversion Reconstruction. The inverted point clouds by pointinverter are very similar to the target input data. </p>
             <br>
             <img src="images/dense_correspondence_v2.png" style="width:100%"></img>
             <br>
-            <p >Dense correspondence. The reconstuction sample using our inversion model maintains the dense correspondence with SP-GAN. </p>
+            <p align="center">Dense correspondence. The reconstuction sample using our inversion model maintains the dense correspondence with SP-GAN. </p>
             
           </figure>
         </div>

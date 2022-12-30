@@ -373,9 +373,6 @@ form {
 .u-pull-left {
   float: left; }
 
-iframe{
-  display:block;
-}
 
 /* Misc
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -397,6 +394,10 @@ hr {
   display: table;
   clear: both; }
 
+div {
+  display: flex;
+  justify-content: center;
+  }
 
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
